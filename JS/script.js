@@ -5,7 +5,7 @@ let resultElement = document.querySelector(".js-result");
 
 let rateEUR = 4.7038;
 let rateUSD = 4.5387;
-let rateNOK = 0.4503;
+let rateNOK = 0.4504;
 
 formElement.addEventListener("input", () => {
 
