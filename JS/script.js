@@ -3,7 +3,7 @@ let amountElement = document.querySelector(".js-amount");
 let currencyElement = document.querySelector(".js-currency");
 let resultElement = document.querySelector(".js-result");
 
-let rateEUR = 4.7039;
+let rateEUR = 4.7038;
 let rateUSD = 4.5387;
 let rateNOK = 0.4503;
 
