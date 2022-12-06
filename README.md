@@ -1,5 +1,8 @@
 # currency-converter
 Kantor wymiany walut
-Link to the website:
-https://images/money.jpg
+
 ![money](https://images/money.jpg)
+
+## Link to the website:
+https://narada108.github.io/currency-converter/
+
