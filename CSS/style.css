@@ -9,6 +9,12 @@ html {
 body {
     font-family: 'Lato', sans-serif;
     color: black;
+    background-image: url("../images/BackgroundImage.jpg");
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-position: top;
+    background-attachment: fixed;
+    
 }
 
 .container {
