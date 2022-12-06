@@ -26,7 +26,7 @@ body {
     border: 1px solid black;
     border-radius: 20px;
     box-shadow: 0 0 25px 3px black;
-    background-image: url(../images/BackgroundImage2.jpg);
+    background-image: url("../images/BackgroundImage2.jpg");
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
