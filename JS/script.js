@@ -19,6 +19,9 @@
     const updateResultText = (amount, result, currency) => {
         const resultElement = document.querySelector(".js-result");
         resultElement.innerHTML = `${amount.toFixed(2)} PLN=<strong>${result.toFixed(2)} ${currency}</strong>`;
+        if (amount < 0) {
+            resultElement.innerText = "Wartość nie może być ujemna!"
+        }
     }
 
     const onFormInput = () => {
@@ -33,9 +36,7 @@
 
         updateResultText(amount, result, currency);
 
-        if (amount < 0) {
-            resultElement.innerText = "Wartość nie może być ujemna!"
-        }
+        
     }
     const init = () => {
         const formElement = document.querySelector(".js-form");
