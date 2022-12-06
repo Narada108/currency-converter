@@ -7,16 +7,14 @@
         switch (currency) {
             case "EUR":
                 return amount / rateEUR;
-                
+
             case "USD":
                 return amount / rateUSD;
-              
+
             case "NOK":
                 return amount / rateNOK;
         }
     }
-
-    
 
     const updateResultText = (amount, result, currency) => {
         const resultElement = document.querySelector(".js-result");
@@ -24,10 +22,9 @@
     }
 
     const onFormInput = () => {
-        
+
         const amountElement = document.querySelector(".js-amount");
         const currencyElement = document.querySelector(".js-currency");
-        
 
         const amount = +amountElement.value;
         const currency = currencyElement.value;
@@ -39,19 +36,11 @@
         if (amount < 0) {
             resultElement.innerText = "Wartość nie może być ujemna!"
         }
-}
-    const init = () => {const formElement = document.querySelector(".js-form");
+    }
+    const init = () => {
+        const formElement = document.querySelector(".js-form");
         formElement.addEventListener("input", onFormInput)
-
     };
 
     init();
-
-    // Sprawdzane warunki w linii 82:
-    // (amount.toString().startsWith("-")
-    // (amount === "-")
-    // (amount === +("-"))
-    // (amountElement === "-")
-    // (amountElement === +("-"))
-
 }
