@@ -1,0 +1,21 @@
+.form {
+    min-height: 200px;
+}
+
+.form__header {
+    text-align: center;
+}
+
+.form__labelText {
+    width: 150px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.form__field {
+    width: 200px;
+}
+
+.form__result {
+    text-align: center;
+}
