@@ -25,7 +25,6 @@
     }
 
     const onFormInput = () => {
-
         const amountElement = document.querySelector(".js-amount");
         const currencyElement = document.querySelector(".js-currency");
 
