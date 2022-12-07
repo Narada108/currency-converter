@@ -35,13 +35,24 @@
         const result = calculateResult(amount, currency);
 
         updateResultText(amount, result, currency);
-
-        
     }
+
     const init = () => {
         const formElement = document.querySelector(".js-form");
-        formElement.addEventListener("input", onFormInput)
-    };
+        formElement.addEventListener("input", onFormInput);
+    }
+
+    const clearResultElement = () => {
+        const resultElement = document.querySelector(".js-result");
+        const amountElement = document.querySelector(".js-amount");
+        resultElement.innerText = "";
+        amountElement.focus();
+    }
+    const reset = () => {
+        const button = document.querySelector(".js-reset");
+        button.addEventListener("click", clearResultElement)
+    }
 
     init();
+    reset();
 }

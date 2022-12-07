@@ -1,5 +1,5 @@
 .form {
-    min-height: 200px;
+    min-height: 230px;
 }
 
 .form__header {
@@ -15,9 +15,14 @@
 }
 
 .form__field {
-    width: 200px;
+    margin-left: 20px;
 }
 
 .form__result {
     text-align: center;
+}
+
+.form-reset {
+    display: block;
+    margin: 0 auto;
 }
