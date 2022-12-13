@@ -34,6 +34,8 @@
         const result = calculateResult(amount, currency);
 
         updateResultText(amount, result, currency);
+
+        preventDefaultEnter(amountElement);
     }
 
     const init = () => {
@@ -52,6 +54,16 @@
         button.addEventListener("click", clearResultElement)
     }
 
+    const preventDefaultEnter = (e) => {
+        if (e.keyCode === 13) {
+            e.preventDefault();
+            return false;
+        }
+    const amountElement = document.querySelector(".js-amount");
+    amountElement.addEventListener('keypress', preventDefaultEnter)
+    }
+        
     init();
     reset();
 }
+
