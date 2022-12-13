@@ -15,8 +15,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    background-attachment: fixed;
-    
+    background-attachment: fixed;    
 }
 
 .container {
@@ -31,6 +30,3 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-
-
